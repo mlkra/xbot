@@ -1,0 +1,9 @@
+celery[pytest]~=5.2.6
+beautifulsoup4~=4.11.0
+fastapi~=0.75.1
+pre-commit
+pydantic~=1.9.0
+pytest
+requests~=2.27.1
+typing-extensions~=4.1.1
+uvicorn[standard]~=0.17.6

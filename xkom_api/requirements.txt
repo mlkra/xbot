@@ -1,0 +1,2 @@
+Flask~=2.1.1
+user-agents~=2.2.0

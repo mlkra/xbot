@@ -1,0 +1,9 @@
+services:
+  rabbitmq:
+    image: rabbitmq
+  xbot_api:
+    image: xbot
+    command: uvicorn xbot.api.main:app
+  xbot_celery:
+    image: xbot
+    command: celery -A xbot.tasks worker -B --loglevel=INFO

@@ -1,0 +1,15 @@
+services:
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+  rabbitmq:
+    image: rabbitmq
+    ports:
+      - "5672:5672"
+  xkom_api:
+    build:
+      context: xkom_api
+    ports:
+      - "5000:5000"
